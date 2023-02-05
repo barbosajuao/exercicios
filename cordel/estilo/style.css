@@ -3,7 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Srisakdi:wght@400;700&display=swap');
 
 
-:root{
+:root{/*usado para definir as variaveis em css*/
     --fonte01:'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
     --fonte02: 'Passion One', 'cursive';
     --fonte03: 'Srisakdi', 'cursive';
@@ -29,7 +29,7 @@ header{
 header > h1{
     padding-top: 50px;
     font-family: var(--fonte02);
-    font-size: 8vw;
+    font-size: 8vw;/*utilizando a largura da tela/janela*/
 }
 header > p {
     padding-bottom: 50px;
@@ -46,7 +46,7 @@ a:hover{
 }
 section{
     padding-top: 10vh;
-    padding-bottom: 10vh;
+    padding-bottom: 10vh;/*usando a autura da janela/tela*/
     line-height: 2em;
     padding-left: 30px;
     font-family: var(--fonte03);
@@ -61,11 +61,25 @@ section.normal{
 }
 section.foto{
     color: beige;
+    background-size: cover;/* para que a foto se adapte a tela */
+    background-attachment: fixed;/*para que a foto fique fixada e o conteudo role*/
 }
 section.foto > p {
-    background-color: rgba(0, 0, 0, 0.495);
+    background-color: rgba(0, 0, 0, 0.227);
     display: inline-block;
     padding: 10px;
+}
+section#img01{
+    background-image: url(../imagens/background001.jpg);
+    background-position: right center;
+    
+
+}
+section#img02{
+    background-image: url(../imagens/background002.jpg);
+    background-position: right center;
+   
+
 }
 
 footer{
