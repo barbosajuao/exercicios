@@ -1,0 +1,24 @@
+@charset "UTF-8";/*nao pode esquecer de forma alguma essa chamada*/
+
+/*aqui chamou normalmente o body e fiz as configuracoes nele*/
+body{
+    background-color: blue;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+}
+/*aqui aonde entra o inportante poiis ao selecionar a teg h1 eu chamei o id dela com # para poder modificar somente essa h1 com o id */
+h1#primeiro{
+    color: aqua;
+    text-align: center;
+    background-color: black;
+}
+
+h1{
+    color: rgb(151, 42, 253);
+    
+}
+
+p{
+    text-align: justify;
+}
+/*tudo que for id chama com # e tudo que dor classe chama com . */

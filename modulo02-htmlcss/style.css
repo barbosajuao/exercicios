@@ -1,0 +1,40 @@
+@charset "UTF-8";/*essa linha me fala sobre o tipo de idioma e caracteries*/
+
+* {
+    font-family: Arial, Helvetica, sans-serif; /*aqui eu usei a teg(*) para poder criar um parametro global e a dentro a (font-family para escolher o tipo de fonte que sera apicada em todo o site*/
+
+} 
+
+body { /*seletor*/
+
+     background-image: linear-gradient(to right, #F2CA99, #D9A05B);  /*propriedade/////////aqui eu selecionei o body e usei a teg backgraud-image com linear-gradiente para poder fazer o degrade de cores do fundo do site*/
+    
+  
+}
+
+main{
+    background-color: rgb(255, 255, 255);/*aqui e a cor do conteiner*/
+    box-shadow: 5px 5px 18px #460f0b;/*aqui e o sonbreamento do conteiner*/
+    border-radius: 20px;/*aqui e o arrendodamento das bordas do container*/
+    width: 600px;/*aqui e o tamanho do conteiner*/
+    padding: 15px;/*aqui e o crecimento lateral do conteiner*/
+    margin: auto;/*aqui esta colocando todo o container centralisado auto em todas as telas*/
+    font-size: 16px;/*aqui e o tamanho da fonte porem o ideal e usar o 1em para tamanho pois o pixel pode dar errado em algumas telas*/
+}
+h1{
+    color: #8C5627;/*cor da fonte*/
+    text-align: center;/*centralisar*/
+    text-shadow: 1px 1px 2px #8C5627;/*sombreamento*/
+}
+h2{
+    color:#401E0A;/*a cor do testo*/
+}
+
+p {
+    text-align: justify;/*para poder justificar todos os paragrafos*/
+    text-indent: 10px;
+    /*outras formas que vou ter para melhorar os textos sao
+    (text-align:centrer, para centralizar o testo), text-align:left colocar o texto na direita*/
+}
+
+

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grupingteg</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: blue;
+            margin: 0px;
+        }
+
+        header{
+            background-color: antiquewhite;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        main{
+            background-color: antiquewhite;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+
+        footer{
+
+        background-color: aqua;
+        color: black;
+        text-align: center;
+        padding: 1px;
+        margin: 0px;
+        margin-top: 50px;
+        }
+
+        article{
+            background-color: rgb(176, 183, 183);
+            padding: 20px;
+            border-radius: 10px;
+            
+        }
+        
+        article > aside{
+            background-color: rgb(55, 45, 45);
+            padding: 5px;
+            border-radius: 10px;
+
+        }
+        aside > p{
+            color: aliceblue;
+        }
+
+        nav{
+            background-color: rgb(82, 81, 81);
+            padding: 5px;/*espessura*/
+            box-shadow: 3px 3px 5px black;/*sombra*/
+            border-radius: 10px;/*arrendondou*/
+        }
+
+        nav > a{ /*chamou os links dentro do conteiner nav*/
+            text-decoration: none;/*tirou sublinhado*/
+            color: aliceblue;
+            font-weight: bold;/*negrito*/
+            margin-right: 5px;/*margem da altura*/
+
+
+        }
+
+        h1{
+            text-align: center;/*centralisou o texto*/
+        }
+    </style>
+</head>
+<body>
+    <header><!--teg usada como div para cabecario-->
+        <h1>Meu site!</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main><!--teg usada como div para conteudo-->
+        <section id="assuntos">
+
+        </section>
+        <section id="moticias">
+            <article>
+                <h2>noticias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sequi corporis cum! Facilis sapiente ipsa delectus ea, natus, illo velit sequi dolorum libero, explicabo non fuga aspernatur placeat provident omnis? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi minima at quo repellat quam a quidem minus facere corporis iure eius odio ipsum, quaerat iste expedita. Quod aliquam reprehenderit ratione.
+                </p>
+                <aside>
+                    <p>aitigo feito por joao pedro</p>
+                </aside>
+
+            </article>
+           
+        </section>
+
+    </main>
+    <footer><!--teg usada como div para rodape-->
+        <p>desenvolvido por joao pedro </p>
+
+    </footer>
+</body>
+</html>
