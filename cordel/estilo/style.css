@@ -1,12 +1,24 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Srisakdi:wght@400;700&display=swap');
 
-*{
+
+:root{
+    --fonte01:'Verdana', 'Geneva', 'Tahoma', 'sans-serif';
+    --fonte02: 'Passion One', 'cursive';
+    --fonte03: 'Srisakdi', 'cursive';
+}
+
+
+*{/*aqui sao configuracoes globais*/
     margin: 0px;
     padding: 0px;
+  
 }
-html,body{
-    min-height: 100vh;
+html,body{ /*dessa forma ja consigo configurar 2 tegs ao mesmo tempo quando for a mesma config*/
+    min-height: 100vh;/*tamanho equivalente a aba da tela*/
     background-color: blue;
+    font-family: var(--fonte01);
 
 }
 header{
@@ -16,6 +28,8 @@ header{
 }
 header > h1{
     padding-top: 50px;
+    font-family: var(--fonte02);
+    font-size: 8vw;
 }
 header > p {
     padding-bottom: 50px;
@@ -35,6 +49,9 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte03);
+    font-weight: bolder;
+    font-size: 1.5em;
 }
 
 
@@ -47,12 +64,13 @@ section.foto{
 }
 section.foto > p {
     background-color: rgba(0, 0, 0, 0.495);
-    width: 400px;
+    display: inline-block;
+    padding: 10px;
 }
 
 footer{
     background-color: black;
     text-align: center;
-    padding: 10px;
+    padding: 10px;/*tamaho vertical*/
     color: beige;
 }
