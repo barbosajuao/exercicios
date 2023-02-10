@@ -7,19 +7,19 @@
     <title>Document</title>
 </head>
 <body>
-    <form action="cadastro.PHP" method="post">
+    <form action="cadastro.PHP" method="post"><!--todo formulario tem que esta dentro de form-->
         
-        <fieldset>
+        <fieldset><!--organizou as coisas-->
             <legend>dados pesoais</legend>
             <p>
-                <label for="iuso">usuario</label>
+                <label for="iuso">usuario</label><!--para referenciar nome a caixa-->
                 <input type="text" name="usuario" id="iuso" required placeholder="usuario">
             </p>
             <p>
                 <label for="isen">senha</label>
                 <input type="password" name="sen" id="isen" required placeholder="senha">
             </p>
-            <input type="submit" value="Enviar">
+            <input type="submit" value="Enviar"><!--botao que envia os dados -->
         </fieldset>
 
 
@@ -61,20 +61,34 @@
 
         <fieldset>
             <legend>estado</legend>
-            <p><label for="est"> estado</label></p>
+            <label for="est"> estado</label>
                 
+                 <p>
+                    <select name="estado" id="estado">
+                        <optgroup label="suldeste">
+                         <option value="sao paulo">sao paulo</option>
+                            <option value="ba">bahia</option>
+                            <option value="pr">parana</option>
+                        </optgroup>
+                         <optgroup label="nordeste">
+                             <option value="al">alagoas</option>
+                             <option value="es">espirito santo</option>
+                         </optgroup>
+                    </select>
+                    </p>
                     <p>
-                        <select name="estado" id="estado">
-                            <optgroup label="suldeste">
-                                <option value="sao paulo">sao paulo</option>
-                                <option value="ba">bahia</option>
-                                <option value="ba">parana</option>
-                            </optgroup>
-                            <optgroup label="nordeste">
-                                <option value="ba">alagoas</option>
-                                <option value="ba">espirito santo</option>
-                            </optgroup>
-                        </select>
+                        <label for="prof">proficao</label>
+                        <input type="text" name="prof" id="prof" list="listprof">
+                        <datalist id="listprof"><!--para poder importa a lista-->
+                            <option>administrdor</option>
+                            <option>contabilidade</option>
+                        </datalist>
+
+                    </p>
+                    <p>
+                        <label for="mg">mensagem</label><br>
+                        <textarea name="mg" id="mg" cols="30" rows="10"></textarea><!--campo de mensagem-->
+
                     </p>
 
                 
@@ -85,7 +99,7 @@
                 <br>
                 <br>
 
-            <p><input type="submit" value="enviar"></p>
+            <p><input type="submit" value="enviar"></p><!--chamando o botao-->
         </fieldset>
 
     </form>   
