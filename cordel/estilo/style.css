@@ -17,7 +17,7 @@
 }
 html,body{ /*dessa forma ja consigo configurar 2 tegs ao mesmo tempo quando for a mesma config*/
     min-height: 100vh;/*tamanho equivalente a aba da tela*/
-    background-color: blue;
+    
     font-family: var(--fonte01);
 
 }
